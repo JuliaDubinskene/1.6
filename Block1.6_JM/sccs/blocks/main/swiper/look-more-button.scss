@@ -1,0 +1,26 @@
+.swiper-look-more {
+  display: none;
+  @media only screen and (min-width: $screen-tablet){
+    display: flex;
+    width: 768px;
+  }
+  &_move {
+    margin-bottom: 16px;
+    margin-top: 14px;
+    margin-left: 28px;
+  }
+  &__btn {
+    @media only screen and (min-width: $screen-tablet) {
+      margin-left: 14px;
+      font-family: $font-regular;
+      line-height: 24px;
+      font-size: 16px;
+      font-weight: bold;
+      border: 0;
+      background-color: rgba(248, 248, 248, 1);
+      outline: none;
+      cursor: pointer;
+    }
+
+  }
+}

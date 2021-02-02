@@ -1,0 +1,58 @@
+.feedback-container {
+  width: 320px;
+  min-height: $size-100;
+  position: fixed;
+  right: 0;
+  top:0;
+  transform: translateX(150%);
+  transition: transform 1s ease-in-out;
+  z-index: 3;
+  background-color: $color-white;
+  display: flex;
+  @media only screen and (min-width: $screen-desktop) {
+    width: 440px;
+  }
+  &__menu {
+    margin-left: 16px;
+    margin-top: 90px;
+    @media only screen and (min-width: $screen-desktop) {
+      margin-top: 40px;
+    }
+  }
+  .feedback-menu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: $color-white;
+    flex-wrap: wrap;
+  }
+}
+.feedback-menu_show {
+  transform: translateX(0);
+}
+.feedback-menu__btn {
+  background-color: $color-hex;
+  position: absolute;
+  top: -70px;
+  @media only screen and (min-width: $screen-desktop) {
+    top: -10px;
+    right: 470px;
+  }
+  &::before,
+  &::after {
+    left: 19px;
+    top: 9px;
+    position: absolute;
+    background-color: $color-white;
+    width: 2px;
+    height: 22px;
+    content: "";
+  }
+  &::before {
+    transform: rotate(45deg);
+  }
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+

@@ -1,0 +1,18 @@
+.feedback-inputs__btn {
+  font-family: $font-regular;
+  color: $color-white;
+  font-size: $font-size-less;
+  line-height: $line-height-normal;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 126px;
+  height: 32px;
+  border-radius: 15px;
+  border: 0;
+  padding: 4px 34px 4px 4px;
+  background: no-repeat 105px center url("../img/dropdown.svg") $color-hex;
+  position: absolute;
+  right:32px;
+  top: 503px;
+  cursor: pointer;
+}

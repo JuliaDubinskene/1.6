@@ -1,0 +1,79 @@
+.scroll-menu-container {
+  display: flex;
+  position: relative;
+  .blur {
+    position: absolute;
+    height: 40px;
+    width: 24px;
+    filter: blur(1px);
+    right: 0;
+    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+
+    @media only screen and (min-width: $screen-desktop) {
+      display: none;
+    }
+  }
+}
+
+.scroll-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  overflow-x: auto;
+  flex-grow: 1;
+  list-style-type: none;
+  @media only screen and (min-width: $screen-desktop) {
+    flex-wrap: wrap;
+  }
+  .scroll-menu__item {
+    flex-shrink: 0;
+    margin-left: 16px;
+    padding: 8px 20px 8px 20px;
+    @media only screen and (min-width: $screen-desktop) {
+      flex-shrink: 1;
+      margin-left: 0;
+      padding: 8px 20px 8px 20px;
+    }
+    &:first-child,
+    &:nth-child(5) {
+      display: none;
+      @media only screen and (min-width: $screen-desktop) {
+        display: list-item;
+      }
+    }
+  }
+
+}
+.scroll-menu__link {
+  text-decoration: none;
+  color: $color-link;
+}
+.scroll-menu__item:first-child {
+  border: 1px solid $color-border;
+  border-radius: 3px;
+  background-color: $color-white;
+  padding: 8px 20px 8px 20px;
+  @media only screen and (min-width: $screen-desktop) {
+    margin-left: 28px;
+  }
+}
+.scroll-menu__item:nth-child(2) {
+  border: 1px solid $color-border;
+  border-radius: 3px;
+  background-color: $color-white;
+  padding: 8px 20px 8px 20px;
+  @media only screen and (min-width: $screen-desktop) {
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+  }
+}
+@media only screen and (min-width: $screen-desktop) {
+  .scroll-menu__item:last-child {
+    margin-top: 10px;
+    margin-left: 28px;
+    flex-shrink: 0;
+  }
+  .scroll-menu__item:nth-child(3) {
+    display: none;
+  }
+}

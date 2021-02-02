@@ -1,0 +1,30 @@
+.swiper-services-title {
+  display: none;
+  font-size: 14px;
+  padding-bottom: 16px;
+  padding-top: 32px;
+  padding-left: 24px;
+  color: $color-link;
+  @media only screen and (min-width: $screen-tablet) {
+    display: flex;
+    width: 720px;
+    align-items: baseline;
+  }
+  @media only screen and (min-width: $screen-desktop) {
+    width: 1056px;
+    padding-left: 32px;
+  }
+  &__item:first-child {
+    flex-basis: 55%;
+    margin-left: 16px;
+    @media only screen and (min-width: $screen-desktop) {
+      flex-basis: 52%;
+    }
+  }
+  &__item:nth-child(2) {
+    flex-basis: 10%;
+    @media only screen and (min-width: $screen-desktop) {
+      flex-basis: 16%;
+    }
+  }
+}

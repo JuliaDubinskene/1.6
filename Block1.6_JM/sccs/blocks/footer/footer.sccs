@@ -1,0 +1,42 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid $color-border-light;
+  padding-bottom: 19px;
+  background-color:$color-background;
+
+  @media only screen and (min-width: $screen-tablet) {
+    flex-direction: row;
+    align-items: baseline;
+  }
+  &__item {
+    margin-top: 16px;
+    font-size: $font-size-light;
+    line-height: $line-height-ExtraLight;
+    color: $color-link;
+    white-space: pre-line;
+    text-align: center;
+
+    @media only screen and (min-width: $screen-tablet) {
+      margin-top: 32px;
+    }
+
+    &_copyright {
+      @media only screen and (min-width: $screen-tablet) {
+        text-align: left;
+      }
+    }
+    &_public-offer {
+      @media only screen and (min-width: $screen-tablet) {
+        white-space: normal;
+        flex-wrap: wrap;
+        flex-basis: 30%;
+        text-align: right;
+      }
+    }
+    }
+
+  }
+

@@ -1,0 +1,22 @@
+$color-border:#41F6D7;
+.title-str {
+  display: flex;
+  justify-content: space-between;
+  &__title {
+    margin: 24px 16px 24px 16px;
+    position: relative;
+    font-family: TTLakes-Bold, sans-serif;
+    flex-grow: 1;
+    &::before {
+      content:"";
+      position: absolute;
+      height: 40px;
+      width: 4px;
+      left: -17px;
+      background-color: $color-border;
+      border: 1px solid $color-border;
+      border-top-right-radius: 22%;
+      border-bottom-right-radius: 22%;
+    }
+  }
+}

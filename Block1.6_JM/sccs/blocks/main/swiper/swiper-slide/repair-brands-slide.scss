@@ -1,0 +1,73 @@
+.repair-brands-container {
+  .swiper-slide {
+    width: 240px;
+    height: 72px;
+    border-radius: 5px;
+    background-color: $color-white;
+    margin-left: 16px;
+    @media only screen and (min-width: $screen-tablet) {
+      width: 224px;
+      margin-left: 24px;
+      margin-bottom: 16px;
+    }
+    @media only screen and (min-width: $screen-desktop) {
+      width: 240px;
+      margin-left: 32px;
+    }
+    &:nth-child(4) {
+      @media only screen and (min-width: $screen-tablet) {
+        display: none;
+      }
+      @media only screen and (min-width: $screen-desktop) {
+        display: block;
+      }
+    }
+    &:nth-child(8) {
+      @media only screen and (min-width: $screen-tablet) {
+        display: none;
+      }
+      @media only screen and (min-width: $screen-desktop) {
+        display: block;
+      }
+    }
+    &:nth-child(10) {
+      margin-right: 18px;
+      @media only screen and (min-width: $screen-tablet) {
+        margin-right: 0;
+      }
+    }
+    .swiper__item {
+      margin-left: 4px;
+      width:200px;
+      height: 72px;
+      &_lenovo {
+        background: no-repeat 16px center url("../img/brands/lenovo.svg");
+      }
+      &_samsung {
+        background: no-repeat 16px center url("../img/brands/samsung.svg");
+      }
+      &_apple {
+        background: no-repeat 16px center url("../img/brands/apple.svg");
+      }
+      &_view-sonic {
+        background: no-repeat 16px center url("../img/brands/veiwsonic.svg");
+      }
+      &_bosch {
+        background: no-repeat 16px center url("../img/brands/bosch.svg");
+      }
+      &_hp {
+        background: no-repeat 16px center url("../img/brands/hp.svg");
+      }
+      &_acer {
+        background: no-repeat 16px center url("../img/brands/acer.svg");
+      }
+      &_sony {
+        background: no-repeat 16px center url("../img/brands/sony.svg");
+      }
+    }
+  }
+
+}
+
+
+

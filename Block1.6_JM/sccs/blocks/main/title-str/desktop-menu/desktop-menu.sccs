@@ -1,0 +1,48 @@
+$color-hex: #FF3E79;
+$color-black: black;
+$screen-desktop: 1440px;
+.desktop-menu {
+  flex-basis: 35%;
+  display: none;
+  @media only screen and (min-width: $screen-desktop) {
+    display: flex;
+    flex-basis: 40%;
+    justify-content: flex-end;
+  }
+  .option {
+    display: flex;
+    align-items: center;
+    margin-right: 32px;
+    @media only screen and (min-width: $screen-desktop) {
+      display: flex;
+      align-items: center;
+    }
+    &__text {
+      margin-right: 8px;
+      font-weight: 900;
+      color: $color-black;
+      @media only screen and (min-width: $screen-desktop) {
+        margin-right: 8px;
+      }
+    }
+    &__btn_theme-repair {
+      background-image: url("../img/repair.svg");
+      background-color: $color-hex;
+      background-repeat: no-repeat;
+      background-position: 10px 10px;
+    }
+    &__btn_theme-check  {
+      background-image: url("../img/checkstatus.svg");
+      background-color: $color-hex;
+      background-repeat: no-repeat;
+      background-position: 12px 10px;
+    }
+  }
+}
+@media only screen and (min-width: $screen-desktop) {
+  .tool {
+    align-self: center;
+  }
+}
+
+
