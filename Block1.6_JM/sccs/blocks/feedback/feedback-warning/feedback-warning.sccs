@@ -1,8 +1,0 @@
-.feedback-personal-data__text {
-  color: $color-link;
-  font-weight: 600;
-  line-height: $line-height-ExtraLight;
-  .feedback-personal-data__warning {
-    color: $color-hex;
-  }
-}
