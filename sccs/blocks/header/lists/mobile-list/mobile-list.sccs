@@ -1,0 +1,25 @@
+.mobile-list {
+  display: flex;
+  flex-basis: $size-100;
+  align-items: center;
+  list-style-type: none;
+  justify-content: flex-end;
+
+  @media only screen and (min-width: $screen-tablet) {
+    flex-basis: 25%;
+  }
+  .mobile-list__btn_theme-repair {
+    background-image: url("../img/repair.svg");
+  }
+  .mobile-list__btn_theme-check {
+    background-image: url("../img/checkstatus.svg");
+    background-position: 12px 10px;
+  }
+  .mobile-list__item:nth-child(1) {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .mobile-list__item:nth-child(2) {
+    margin-right: 16px;
+  }
+}

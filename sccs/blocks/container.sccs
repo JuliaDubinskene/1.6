@@ -1,0 +1,32 @@
+.body {
+  font-family: $font-regular;
+  background-color: $color-background;
+  overflow: scroll;
+  height: 100%;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 100%;
+  @media only screen and (min-width: $screen-desktop) {
+    flex-direction: row;
+  }
+}
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: $size-100;
+  @media only screen and (min-width: $screen-desktop) {
+    background-color: $color-background;
+    width: 1120px;
+
+  }
+  &__blur {
+    background-color:white;
+    opacity: 1;
+  }
+}

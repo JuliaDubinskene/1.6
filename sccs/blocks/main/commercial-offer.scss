@@ -1,0 +1,26 @@
+.commercial-offer {
+  padding: 16px;
+  @media only screen and (min-width: $screen-tablet) {
+    padding: 24px;
+  }
+  @media only screen and (min-width: $screen-desktop) {
+    padding: 32px;
+  }
+
+  &__link {
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    position: relative;
+    &::after {
+      content: "";
+      background-image: url("../img/Line.svg");
+      position: absolute;
+      width: 8px;
+      height: 12px;
+      top: 6px;
+      margin-left: 10px;
+    }
+  }
+}

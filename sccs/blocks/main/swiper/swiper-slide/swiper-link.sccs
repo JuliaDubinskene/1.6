@@ -1,0 +1,62 @@
+.repair-devices-container {
+  .swiper__link {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid $color-hex;
+    position: absolute;
+    right: 18px;
+    top: 100px;
+
+    &::before,
+    &::after {
+      content: "";
+      width: 2px;
+      height: 9px;
+      background-color: $color-hex;
+      position: absolute;
+      right: 18px;
+    }
+
+    &::before {
+      transform: rotate(55deg);
+      top: 17px;
+    }
+
+    &::after {
+      transform: rotate(-55deg);
+      top: 13px;
+    }
+  }
+}
+.repair-brands-container {
+  .swiper__link {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid $color-hex;
+    position: absolute;
+    right: 18px;
+    top: 14px;
+
+    &::before,
+    &::after {
+      content: "";
+      width: 2px;
+      height: 9px;
+      background-color: $color-hex;
+      position: absolute;
+      right: 18px;
+    }
+
+    &::before {
+      transform: rotate(55deg);
+      top: 17px;
+    }
+
+    &::after {
+      transform: rotate(-55deg);
+      top: 13px;
+    }
+  }
+}

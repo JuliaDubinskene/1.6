@@ -1,0 +1,58 @@
+.repair-devices-container{
+  .swiper-slide {
+    width: 238px;
+    height: 160px;
+    background-color: $color-white;
+    border-radius: 5px;
+    margin-left: 16px;
+    @media only screen and (min-width: $screen-tablet) {
+      width: 224px;
+      margin-left: 24px;
+      margin-bottom: 16px;
+    }
+    @media only screen and (min-width: $screen-desktop) {
+      width: 240px;
+      margin-left: 32px;
+    }
+    &:nth-child(4) {
+      @media only screen and (min-width: $screen-tablet) {
+        display: none;
+      }
+      @media only screen and (min-width: $screen-desktop) {
+        display: block;
+      }
+    }
+    &:nth-child(7) {
+      margin-right: 18px;
+      @media only screen and (min-width: $screen-tablet) {
+        margin-right: 0;
+      }
+    }
+    .swiper__item {
+      margin-left: 16px;
+      margin-top: 16px;
+      font-family: $font-regular;
+      font-weight: bold;
+
+    }
+
+  }
+}
+
+
+.swiper__slide_hidden {
+  @media only screen and (min-width: $screen-tablet) {
+    display: none;
+  }
+}
+.swiper__slide_show {
+  display: block;
+}
+.rotate {
+  transform: rotate(180deg);
+}
+.swiper-look-more_top {
+  margin-bottom: 32px;
+}
+
+

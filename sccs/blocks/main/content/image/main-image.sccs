@@ -1,0 +1,19 @@
+.main-image {
+  padding: 20px 0 20px 0;
+  max-height: 384px;
+  max-width: 532px;
+  @media only screen and (min-width: $screen-tablet) {
+    flex-basis: 47%;
+  }
+  @media only screen and (min-width: $screen-desktop) {
+    flex-basis: 52%;
+  }
+  &__image {
+    width: $size-100;
+    height: auto;
+    object-fit: cover;
+    @media only screen and (min-width: $screen-tablet) {
+      border-radius: 10px;
+    }
+  }
+}

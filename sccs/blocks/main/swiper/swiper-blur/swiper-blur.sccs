@@ -1,0 +1,33 @@
+.repair-brands-container {
+  .swiper-blur {
+    position: absolute;
+    height: 74px;
+    width: 18px;
+    filter: blur(4px);
+    right: 0;
+    background: linear-gradient(270deg, $color-background 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    z-index: 2;
+  }
+}
+.repair-devices-container {
+  .swiper-blur {
+    position: absolute;
+    height: 160px;
+    width: 18px;
+    filter: blur(4px);
+    right: 0;
+    background: linear-gradient(270deg, $color-background 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    z-index: 2;
+  }
+}
+.price-list-container {
+  .swiper-blur {
+    position: absolute;
+    height: 200px;
+    width: 18px;
+    filter: blur(4px);
+    right: 0;
+    background: linear-gradient(270deg, $color-background 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    z-index: 2;
+  }
+}
